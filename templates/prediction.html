@@ -1,0 +1,72 @@
+{%include "header.html" %}
+
+<div class="page-nav no-margin row" xmlns="http://www.w3.org/1999/html">
+                   <div class="container">
+                       <div class="row">
+                           <h2>Finish Placement Prediction</h2>
+                           <ul>
+                               <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
+                               <li><i class="fas fa-angle-double-right"></i> Prediction</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+
+
+
+
+  {% if result %}
+
+ <h5>Prediction Results : <font color="red" size="+2">{{result}}</font></h5>
+
+    {% endif %}
+<div style="margin-top:0px;" class="row">
+
+      </div>
+<form action="rank_prediction" method="post">
+      <div class="row contact-rooo">
+
+           <div class="row w-100">
+
+
+            <div style="padding:20px" class="col-sm-8">
+
+                <div class="row">
+                    <div class="col-sm-8">
+                         <label>Select Testing File :</label>
+                        <input type="file"  name="file" class="form-control input-sm" required ></div>
+                </div>
+
+                 <div style="margin-top:10px;" class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                    <div class="col-sm-8">
+                     <button class="btn btn-danger btn-sm">&nbsp;Prediction&nbsp;</button>
+
+
+                    </div>
+                </div>
+            </div>
+             <div class="col-sm-3">
+
+                  <div style="margin:5px" class="serv">
+
+
+
+
+
+           </div>
+
+
+         </div>
+
+            </div>
+        </div>
+</form>
+
+
+
+
+
+
+
+{%include "footer.html" %}
